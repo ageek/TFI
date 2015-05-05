@@ -143,7 +143,7 @@ TFIModelCV <- h2o.glm(x = names(h2oTFITrain)[c(-1, -which(names(h2oTFITrain) == 
                       nfolds = 5,
                       family = "gaussian", 
                       use_all_factor_levels = TRUE,
-                      alpha = c(0, 0.01, 0.1),
+                      alpha = c(0, 0.0015, 0.995, 1),
                       lambda_search = TRUE,
                       nlambda = 40,
                       variable_importances = TRUE,
